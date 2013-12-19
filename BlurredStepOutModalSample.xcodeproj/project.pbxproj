@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88F8D5BA18634A240075746E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F8D5B918634A240075746E /* Foundation.framework */; };
+		88F8D5BC18634A240075746E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F8D5BB18634A240075746E /* CoreGraphics.framework */; };
+		88F8D5BE18634A240075746E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F8D5BD18634A240075746E /* UIKit.framework */; };
+		88F8D5C418634A240075746E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F8D5C218634A240075746E /* InfoPlist.strings */; };
+		88F8D5C618634A240075746E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5C518634A240075746E /* main.m */; };
+		88F8D5CA18634A240075746E /* NRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5C918634A240075746E /* NRAppDelegate.m */; };
+		88F8D5CC18634A240075746E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F8D5CB18634A240075746E /* Images.xcassets */; };
+		88F8D5D318634A240075746E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F8D5D218634A240075746E /* XCTest.framework */; };
+		88F8D5D418634A240075746E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F8D5B918634A240075746E /* Foundation.framework */; };
+		88F8D5D518634A240075746E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F8D5BD18634A240075746E /* UIKit.framework */; };
+		88F8D5DD18634A240075746E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F8D5DB18634A240075746E /* InfoPlist.strings */; };
+		88F8D5DF18634A240075746E /* BlurredStepOutModalSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5DE18634A240075746E /* BlurredStepOutModalSampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88F8D5D618634A240075746E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F8D5AE18634A240075746E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F8D5B518634A240075746E;
+			remoteInfo = BlurredStepOutModalSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88F8D5B618634A240075746E /* BlurredStepOutModalSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlurredStepOutModalSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F8D5B918634A240075746E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88F8D5BB18634A240075746E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		88F8D5BD18634A240075746E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		88F8D5C118634A240075746E /* BlurredStepOutModalSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlurredStepOutModalSample-Info.plist"; sourceTree = "<group>"; };
+		88F8D5C318634A240075746E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88F8D5C518634A240075746E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88F8D5C718634A240075746E /* BlurredStepOutModalSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlurredStepOutModalSample-Prefix.pch"; sourceTree = "<group>"; };
+		88F8D5C818634A240075746E /* NRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRAppDelegate.h; sourceTree = "<group>"; };
+		88F8D5C918634A240075746E /* NRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRAppDelegate.m; sourceTree = "<group>"; };
+		88F8D5CB18634A240075746E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		88F8D5D118634A240075746E /* BlurredStepOutModalSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurredStepOutModalSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F8D5D218634A240075746E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		88F8D5DA18634A240075746E /* BlurredStepOutModalSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlurredStepOutModalSampleTests-Info.plist"; sourceTree = "<group>"; };
+		88F8D5DC18634A240075746E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88F8D5DE18634A240075746E /* BlurredStepOutModalSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurredStepOutModalSampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88F8D5B318634A240075746E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F8D5BC18634A240075746E /* CoreGraphics.framework in Frameworks */,
+				88F8D5BE18634A240075746E /* UIKit.framework in Frameworks */,
+				88F8D5BA18634A240075746E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88F8D5CE18634A240075746E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F8D5D318634A240075746E /* XCTest.framework in Frameworks */,
+				88F8D5D518634A240075746E /* UIKit.framework in Frameworks */,
+				88F8D5D418634A240075746E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88F8D5AD18634A240075746E = {
+			isa = PBXGroup;
+			children = (
+				88F8D5BF18634A240075746E /* BlurredStepOutModalSample */,
+				88F8D5D818634A240075746E /* BlurredStepOutModalSampleTests */,
+				88F8D5B818634A240075746E /* Frameworks */,
+				88F8D5B718634A240075746E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88F8D5B718634A240075746E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5B618634A240075746E /* BlurredStepOutModalSample.app */,
+				88F8D5D118634A240075746E /* BlurredStepOutModalSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88F8D5B818634A240075746E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5B918634A240075746E /* Foundation.framework */,
+				88F8D5BB18634A240075746E /* CoreGraphics.framework */,
+				88F8D5BD18634A240075746E /* UIKit.framework */,
+				88F8D5D218634A240075746E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88F8D5BF18634A240075746E /* BlurredStepOutModalSample */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5C818634A240075746E /* NRAppDelegate.h */,
+				88F8D5C918634A240075746E /* NRAppDelegate.m */,
+				88F8D5CB18634A240075746E /* Images.xcassets */,
+				88F8D5C018634A240075746E /* Supporting Files */,
+			);
+			path = BlurredStepOutModalSample;
+			sourceTree = "<group>";
+		};
+		88F8D5C018634A240075746E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5C118634A240075746E /* BlurredStepOutModalSample-Info.plist */,
+				88F8D5C218634A240075746E /* InfoPlist.strings */,
+				88F8D5C518634A240075746E /* main.m */,
+				88F8D5C718634A240075746E /* BlurredStepOutModalSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88F8D5D818634A240075746E /* BlurredStepOutModalSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5DE18634A240075746E /* BlurredStepOutModalSampleTests.m */,
+				88F8D5D918634A240075746E /* Supporting Files */,
+			);
+			path = BlurredStepOutModalSampleTests;
+			sourceTree = "<group>";
+		};
+		88F8D5D918634A240075746E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5DA18634A240075746E /* BlurredStepOutModalSampleTests-Info.plist */,
+				88F8D5DB18634A240075746E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88F8D5B518634A240075746E /* BlurredStepOutModalSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88F8D5E218634A240075746E /* Build configuration list for PBXNativeTarget "BlurredStepOutModalSample" */;
+			buildPhases = (
+				88F8D5B218634A240075746E /* Sources */,
+				88F8D5B318634A240075746E /* Frameworks */,
+				88F8D5B418634A240075746E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlurredStepOutModalSample;
+			productName = BlurredStepOutModalSample;
+			productReference = 88F8D5B618634A240075746E /* BlurredStepOutModalSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88F8D5D018634A240075746E /* BlurredStepOutModalSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88F8D5E518634A240075746E /* Build configuration list for PBXNativeTarget "BlurredStepOutModalSampleTests" */;
+			buildPhases = (
+				88F8D5CD18634A240075746E /* Sources */,
+				88F8D5CE18634A240075746E /* Frameworks */,
+				88F8D5CF18634A240075746E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88F8D5D718634A240075746E /* PBXTargetDependency */,
+			);
+			name = BlurredStepOutModalSampleTests;
+			productName = BlurredStepOutModalSampleTests;
+			productReference = 88F8D5D118634A240075746E /* BlurredStepOutModalSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88F8D5AE18634A240075746E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = PuKaPuKa;
+				TargetAttributes = {
+					88F8D5D018634A240075746E = {
+						TestTargetID = 88F8D5B518634A240075746E;
+					};
+				};
+			};
+			buildConfigurationList = 88F8D5B118634A240075746E /* Build configuration list for PBXProject "BlurredStepOutModalSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 88F8D5AD18634A240075746E;
+			productRefGroup = 88F8D5B718634A240075746E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88F8D5B518634A240075746E /* BlurredStepOutModalSample */,
+				88F8D5D018634A240075746E /* BlurredStepOutModalSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88F8D5B418634A240075746E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F8D5C418634A240075746E /* InfoPlist.strings in Resources */,
+				88F8D5CC18634A240075746E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88F8D5CF18634A240075746E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F8D5DD18634A240075746E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88F8D5B218634A240075746E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F8D5CA18634A240075746E /* NRAppDelegate.m in Sources */,
+				88F8D5C618634A240075746E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88F8D5CD18634A240075746E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F8D5DF18634A240075746E /* BlurredStepOutModalSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88F8D5D718634A240075746E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88F8D5B518634A240075746E /* BlurredStepOutModalSample */;
+			targetProxy = 88F8D5D618634A240075746E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88F8D5C218634A240075746E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88F8D5C318634A240075746E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		88F8D5DB18634A240075746E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88F8D5DC18634A240075746E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88F8D5E018634A240075746E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88F8D5E118634A240075746E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88F8D5E318634A240075746E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlurredStepOutModalSample/BlurredStepOutModalSample-Prefix.pch";
+				INFOPLIST_FILE = "BlurredStepOutModalSample/BlurredStepOutModalSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		88F8D5E418634A240075746E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlurredStepOutModalSample/BlurredStepOutModalSample-Prefix.pch";
+				INFOPLIST_FILE = "BlurredStepOutModalSample/BlurredStepOutModalSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		88F8D5E618634A240075746E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlurredStepOutModalSample.app/BlurredStepOutModalSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlurredStepOutModalSample/BlurredStepOutModalSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlurredStepOutModalSampleTests/BlurredStepOutModalSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		88F8D5E718634A240075746E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlurredStepOutModalSample.app/BlurredStepOutModalSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlurredStepOutModalSample/BlurredStepOutModalSample-Prefix.pch";
+				INFOPLIST_FILE = "BlurredStepOutModalSampleTests/BlurredStepOutModalSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88F8D5B118634A240075746E /* Build configuration list for PBXProject "BlurredStepOutModalSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F8D5E018634A240075746E /* Debug */,
+				88F8D5E118634A240075746E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88F8D5E218634A240075746E /* Build configuration list for PBXNativeTarget "BlurredStepOutModalSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F8D5E318634A240075746E /* Debug */,
+				88F8D5E418634A240075746E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88F8D5E518634A240075746E /* Build configuration list for PBXNativeTarget "BlurredStepOutModalSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F8D5E618634A240075746E /* Debug */,
+				88F8D5E718634A240075746E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88F8D5AE18634A240075746E /* Project object */;
+}
