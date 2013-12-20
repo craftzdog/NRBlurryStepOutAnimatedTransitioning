@@ -7,6 +7,7 @@
 //
 
 #import "NRAppDelegate.h"
+#import "NRPresentedViewController.h"
 
 @implementation NRAppDelegate
 
@@ -16,6 +17,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor blackColor];
+    self.window.rootViewController = [[NRPresentedViewController alloc] init];
+    
     return YES;
 }
 

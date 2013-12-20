@@ -19,6 +19,11 @@
 		88F8D5D518634A240075746E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F8D5BD18634A240075746E /* UIKit.framework */; };
 		88F8D5DD18634A240075746E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F8D5DB18634A240075746E /* InfoPlist.strings */; };
 		88F8D5DF18634A240075746E /* BlurredStepOutModalSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5DE18634A240075746E /* BlurredStepOutModalSampleTests.m */; };
+		88F8D5EF18634A940075746E /* NRPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5EE18634A940075746E /* NRPresentedViewController.m */; };
+		88F8D5F018634A940075746E /* NRPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5EE18634A940075746E /* NRPresentedViewController.m */; };
+		88F8D5F418634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5F318634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m */; };
+		88F8D5F518634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5F318634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m */; };
+		88F8D5F818634B410075746E /* NRModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F8D5F718634B410075746E /* NRModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,12 @@
 		88F8D5DA18634A240075746E /* BlurredStepOutModalSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlurredStepOutModalSampleTests-Info.plist"; sourceTree = "<group>"; };
 		88F8D5DC18634A240075746E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88F8D5DE18634A240075746E /* BlurredStepOutModalSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurredStepOutModalSampleTests.m; sourceTree = "<group>"; };
+		88F8D5ED18634A940075746E /* NRPresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRPresentedViewController.h; sourceTree = "<group>"; };
+		88F8D5EE18634A940075746E /* NRPresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRPresentedViewController.m; sourceTree = "<group>"; };
+		88F8D5F218634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRBlurryStepOutAnimatedTransitioning.h; sourceTree = "<group>"; };
+		88F8D5F318634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRBlurryStepOutAnimatedTransitioning.m; sourceTree = "<group>"; };
+		88F8D5F618634B410075746E /* NRModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRModalViewController.h; sourceTree = "<group>"; };
+		88F8D5F718634B410075746E /* NRModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,8 @@
 		88F8D5BF18634A240075746E /* BlurredStepOutModalSample */ = {
 			isa = PBXGroup;
 			children = (
+				88F8D5F118634A990075746E /* TransitionControllers */,
+				88F8D5EC18634A4F0075746E /* ViewControllers */,
 				88F8D5C818634A240075746E /* NRAppDelegate.h */,
 				88F8D5C918634A240075746E /* NRAppDelegate.m */,
 				88F8D5CB18634A240075746E /* Images.xcassets */,
@@ -142,6 +155,26 @@
 				88F8D5DB18634A240075746E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88F8D5EC18634A4F0075746E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5ED18634A940075746E /* NRPresentedViewController.h */,
+				88F8D5EE18634A940075746E /* NRPresentedViewController.m */,
+				88F8D5F618634B410075746E /* NRModalViewController.h */,
+				88F8D5F718634B410075746E /* NRModalViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88F8D5F118634A990075746E /* TransitionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88F8D5F218634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.h */,
+				88F8D5F318634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m */,
+			);
+			name = TransitionControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F8D5F418634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m in Sources */,
 				88F8D5CA18634A240075746E /* NRAppDelegate.m in Sources */,
+				88F8D5F818634B410075746E /* NRModalViewController.m in Sources */,
 				88F8D5C618634A240075746E /* main.m in Sources */,
+				88F8D5EF18634A940075746E /* NRPresentedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F8D5F518634AAF0075746E /* NRBlurryStepOutAnimatedTransitioning.m in Sources */,
 				88F8D5DF18634A240075746E /* BlurredStepOutModalSampleTests.m in Sources */,
+				88F8D5F018634A940075746E /* NRPresentedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +480,7 @@
 				88F8D5E418634A240075746E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88F8D5E518634A240075746E /* Build configuration list for PBXNativeTarget "BlurredStepOutModalSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +489,7 @@
 				88F8D5E718634A240075746E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
