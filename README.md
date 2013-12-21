@@ -1,51 +1,45 @@
-## 概要
+NRBlurryStepOutAnimatedTransitioning
+====================================
 
-<p>
-tweetbot 3では、ツイートの長押しでアクションメニューが表示される際に、直前の画面が後ろに下がりぼかしがかかる。
-これ、かっこいいので真似してみた。完全に再現は出来てないけど。
-</p>
+A tweetbot for iOS7 like modal view transitioning.
+This module is a animated transitioning class which applies blur effect to step-backed view while modal view is presenting.
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/DBhdKHwaGyw?rel=0" frameborder="0" allowfullscreen></iframe>
+[![DEMO](http://img.youtube.com/vi/DBhdKHwaGyw/0.jpg)](http://www.youtube.com/watch?v=DBhdKHwaGyw)
 
-<p>
-GitHubにてソースを取得できます： <a href='https://github.com/noradaiko/NRBlurryStepOutAnimatedTransitioning' target='_blank'>NRBlurryStepOutAnimatedTransitioning</a>
-</p>
+## How to use
 
+Add `NRBlurryStepOutAnimatedTransitioning.h,m` to your project.
 
+In your header:
 
-## つかいかた
+    @interface NRPresentedViewController : UIViewController<UIViewControllerTransitioningDelegate>
+    @end
 
-`NRBlurryStepOutAnimatedTransitioning.h,m`をプロジェクトに追加します。
+In your source:
 
-あなたのViewControllerにUIViewControllerTransitioningDelegateプロトコルを追加：
+    #import "NRBlurryStepOutAnimatedTransitioning.h"
 
-	@interface NRPresentedViewController : UIViewController<UIViewControllerTransitioningDelegate>
-	@end
+    -(void)showNewController;
+    {
+        UIViewController* vc = [[YourModalViewController alloc] init];
+        vc.transitioningDelegate = self;
+        [self presentViewController:vc animated:YES completion:NULL];
+    }
+    
+    
+    #pragma mark - UIViewControllerTransitioningDelegate
+    
+    - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+    {
+        return [[NRBlurryStepOutAnimatedTransitioning alloc] initWithPresenting:YES];
+    }
+    
+    - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+    {
+        return [[NRBlurryStepOutAnimatedTransitioning alloc] initWithPresenting:NO];
+    }
 
-そのViewControllerクラスに以下のような実装を加えます：
+Invoke `-showNewController` from somewhere you like.
+That's it :)
 
-	#import "NRBlurryStepOutAnimatedTransitioning.h"
-
-	-(void)showNewController;
-	{
-	    UIViewController* vc = [[YourModalViewController alloc] init];
-	    vc.transitioningDelegate = self;
-	    [self presentViewController:vc animated:YES completion:NULL];
-	}
-	
-	
-	#pragma mark - UIViewControllerTransitioningDelegate
-	
-	- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
-	{
-	    return [[NRBlurryStepOutAnimatedTransitioning alloc] initWithPresenting:YES];
-	}
-	
-	- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
-	{
-	    return [[NRBlurryStepOutAnimatedTransitioning alloc] initWithPresenting:NO];
-	}
-
-あとは `-showNewController` を好きな時に呼び出すだけ。
-簡単！
 
