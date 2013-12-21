@@ -1,21 +1,28 @@
-NRBlurryStepOutAnimatedTransitioning
-====================================
+## 概要
 
-A tweetbot for iOS7 like modal view transitioning.
-This module is a animated transitioning class which applies blur effect to step-backed view while modal view is presenting.
+<p>
+tweetbot 3では、ツイートの長押しでアクションメニューが表示される際に、直前の画面が後ろに下がりぼかしがかかる。
+これ、かっこいいので真似してみた。完全に再現は出来てないけど。
+</p>
 
-[![DEMO](http://img.youtube.com/vi/DBhdKHwaGyw/0.jpg)](http://www.youtube.com/watch?v=DBhdKHwaGyw)
+<iframe width="640" height="480" src="//www.youtube.com/embed/DBhdKHwaGyw?rel=0" frameborder="0" allowfullscreen></iframe>
 
-## How to use
+<p>
+GitHubにてソースを取得できます： <a href='https://github.com/noradaiko/NRBlurryStepOutAnimatedTransitioning' target='_blank'>NRBlurryStepOutAnimatedTransitioning</a>
+</p>
 
-Add `NRBlurryStepOutAnimatedTransitioning.h,m` to your project.
 
-In your header:
+
+## つかいかた
+
+`NRBlurryStepOutAnimatedTransitioning.h,m`をプロジェクトに追加します。
+
+あなたのViewControllerにUIViewControllerTransitioningDelegateプロトコルを追加：
 
 	@interface NRPresentedViewController : UIViewController<UIViewControllerTransitioningDelegate>
 	@end
 
-In your source:
+そのViewControllerクラスに以下のような実装を加えます：
 
 	#import "NRBlurryStepOutAnimatedTransitioning.h"
 
@@ -39,6 +46,6 @@ In your source:
 	    return [[NRBlurryStepOutAnimatedTransitioning alloc] initWithPresenting:NO];
 	}
 
-Invoke `-showNewController` from somewhere you like.
-That's it :)
+あとは `-showNewController` を好きな時に呼び出すだけ。
+簡単！
 
