@@ -1,9 +1,8 @@
 //
 //  ZoomAnimationController.m
-//  Notes
 //
-//  Created by Tope Abayomi on 26/07/2013.
-//  Copyright (c) 2013 App Design Vault. All rights reserved.
+//  Created by Takuya Matsuyama on 22/12/2013.
+//  Copyright (c) 2013 Takuya Matsuyama. All rights reserved.
 //
 
 #import "NRBlurryStepOutAnimatedTransitioning.h"
