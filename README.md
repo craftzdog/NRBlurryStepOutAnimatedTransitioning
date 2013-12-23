@@ -9,16 +9,27 @@ This module is a animated transitioning class which applies blur effect to step-
 ![Screenshot01](./Sample/screenshot1.png)
 ![Screenshot02](./Sample/screenshot2.png)
 
-## How to use
+## Installation
 
-Add `NRBlurryStepOutAnimatedTransitioning.h,m` to your project.
+Just add `NRBlurryStepOutAnimatedTransitioning.h,m` into your project.
 
-In your header:
+### CocoaPods
+
+Add below line into your `Podfile`:
+
+	pod 'NRBlurryStepOutAnimatedTransitioning', '~> 0.1.0'
+
+Then, run `$ pod install`
+
+
+## Easy to use
+
+In your header file, add `UIViewControllerTransitioningDelegate` protocol to your view controller class:
 
     @interface NRPresentedViewController : UIViewController<UIViewControllerTransitioningDelegate>
     @end
 
-In your source:
+In your source file:
 
     #import "NRBlurryStepOutAnimatedTransitioning.h"
 
