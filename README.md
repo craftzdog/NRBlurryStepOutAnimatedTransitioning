@@ -4,7 +4,10 @@ NRBlurryStepOutAnimatedTransitioning
 A tweetbot for iOS7 like modal view transitioning.
 This module is a animated transitioning class which applies blur effect to step-backed view while modal view is presenting.
 
-[![DEMO](http://img.youtube.com/vi/DBhdKHwaGyw/0.jpg)](http://www.youtube.com/watch?v=DBhdKHwaGyw)
+[Demo video](http://www.youtube.com/watch?v=DBhdKHwaGyw)
+
+![Screenshot01](./Sample/screenshot1.png)
+![Screenshot02](./Sample/screenshot2.png)
 
 ## How to use
 
